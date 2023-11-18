@@ -3,10 +3,10 @@
 
 ## 前言
 ::: warning
-注意：2023/11/18更新：由于语雀官方更新了账号密码登录规则，加上了人机校验，账号密码模式已无法通过 Elog 登录！目前只能使用 Token 方式同步文档（需要语雀超级会员）
+注意：2023/11/18更新：由于语雀官方更新了账号密码登录规则，加上了人机校验，账号密码模式已无法通过 Elog 登录！目前只能使用 Token 方式同步文档（需要语雀超级会员）  
 如果你不是语雀超级会员，可以使用 Notion 进行部署文档站点，[参考示例](https://github.com/LetTTGACO/elog-docs)
 :::
-::: info
+::: tip
 VitePress 要求 Node 18及以上版本
 :::
 
@@ -69,13 +69,13 @@ npm run docs:dev
 在 Github 仓库的设置中找到 `Actions-General`，打开流水线写入权限`Workflow permissions`
 
 ### 配置环境变量
-在本地运行时，用的是`.elog.env`文件中定义的语雀账号信息，而在 Github Actions 时，需要提前配置环境变量。
+在本地运行时，用的是`.elog.env`文件中定义的语雀账号信息，而在 Github Actions 时，需要提前配置环境变量。  
 在 Github 仓库的设置中找到 `Secrets and variables`，新增仓库的环境变量和`.elog.env`保持一致即可
 
 ### 自动化部署
-当在语雀中改动文档后，手动/自动触发 Github Actions流水线，会重新从语雀增量拉取文档，自动提交代码到 Github 仓库。
-Vercel 会实时监测仓库代码，当有新的提交时都会重新部署博客。如此就实现了自动化部署博客。
-整个流程的关键点就在于：如何手动/自动触发 Github Actions
+当在语雀中改动文档后，手动/自动触发 Github Actions流水线，会重新从语雀增量拉取文档，自动提交代码到 Github 仓库。  
+Vercel 会实时监测仓库代码，当有新的提交时都会重新部署博客。如此就实现了自动化部署博客。  
+整个流程的关键点就在于：如何手动/自动触发 Github Actions。  
 在项目.`github/workflows/sync.yaml`中已经配置了外部 API 触发 Github Actions 事件，所以只需要调用 API 触发流水线即可。
 
 #### 手动触发
