@@ -3,12 +3,12 @@
     {
       "id": 147363037,
       "doc_id": "gn12qnqe683ns0co",
-      "updated": 1700315624000,
+      "updated": 1700326804000,
       "properties": {
         "title": "自定义Elog配置",
         "urlname": "gn12qnqe683ns0co",
         "date": "2023-11-18 15:42:35",
-        "updated": "2023-11-18 21:53:44",
+        "updated": "2023-11-19 01:00:04",
         "author": "1874"
       },
       "catalog": [
@@ -45,12 +45,12 @@
     {
       "id": 147363135,
       "doc_id": "neggaa196u5yqmqm",
-      "updated": 1700324301000,
+      "updated": 1700326810000,
       "properties": {
         "title": "语雀示例文章",
         "urlname": "neggaa196u5yqmqm",
         "date": "2023-11-18 15:44:04",
-        "updated": "2023-11-19 00:18:21",
+        "updated": "2023-11-19 01:00:10",
         "author": "1874"
       },
       "catalog": [
@@ -66,12 +66,12 @@
     {
       "id": 147362979,
       "doc_id": "ssuhngw0yb3dgkkg",
-      "updated": 1700324981000,
+      "updated": 1700327104000,
       "properties": {
         "title": "快速开始",
         "urlname": "ssuhngw0yb3dgkkg",
         "date": "2023-11-18 15:41:50",
-        "updated": "2023-11-19 00:29:41",
+        "updated": "2023-11-19 01:05:04",
         "author": "1874"
       },
       "catalog": [
@@ -104,6 +104,27 @@
       "realName": "写作注意事项",
       "relativePath": "/配置详情/写作注意事项.md",
       "docPath": "docs/docs/配置详情"
+    },
+    {
+      "id": 147392043,
+      "doc_id": "yeanygk42ggzdy3y",
+      "updated": 1700326762000,
+      "properties": {
+        "title": "VitePress短路由模式",
+        "urlname": "yeanygk42ggzdy3y",
+        "date": "2023-11-19 00:32:57",
+        "updated": "2023-11-19 00:59:22",
+        "author": "1874"
+      },
+      "catalog": [
+        {
+          "title": "进阶配置",
+          "doc_id": "yeanygk42ggzdy3y"
+        }
+      ],
+      "realName": "VitePress短路由模式",
+      "relativePath": "/进阶配置/VitePress短路由模式.md",
+      "docPath": "docs/docs/进阶配置"
     }
   ],
   "catalog": [
@@ -233,7 +254,7 @@
       "url": "",
       "prev_uuid": "z87giQDkCtCUCj77",
       "sibling_uuid": "",
-      "child_uuid": "TcLjvwEcsN70dQrn",
+      "child_uuid": "NgLmt61eCyauaPoI",
       "parent_uuid": "",
       "doc_id": "",
       "level": 0,
@@ -245,10 +266,27 @@
     },
     {
       "type": "DOC",
+      "title": "VitePress短路由模式",
+      "uuid": "NgLmt61eCyauaPoI",
+      "url": "yeanygk42ggzdy3y",
+      "prev_uuid": "_wZqxStpsE4IxFOq",
+      "sibling_uuid": "TcLjvwEcsN70dQrn",
+      "child_uuid": "",
+      "parent_uuid": "_wZqxStpsE4IxFOq",
+      "doc_id": 147392043,
+      "level": 1,
+      "id": 147392043,
+      "open_window": 1,
+      "visible": 1,
+      "depth": 2,
+      "slug": "yeanygk42ggzdy3y"
+    },
+    {
+      "type": "DOC",
       "title": "自定义Elog配置",
       "uuid": "TcLjvwEcsN70dQrn",
       "url": "gn12qnqe683ns0co",
-      "prev_uuid": "_wZqxStpsE4IxFOq",
+      "prev_uuid": "NgLmt61eCyauaPoI",
       "sibling_uuid": "",
       "child_uuid": "",
       "parent_uuid": "_wZqxStpsE4IxFOq",

@@ -32,7 +32,7 @@ npm install
 在项目根目录中复制`.elog.example.env`文件并改名为`.elog.env`，此文件将用于本地同步文档时使用
 
 ### 配置语雀
-参考示例知识库，选择或新建语雀文档知识库，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置语雀并获取 `token``login``repo`。在本地`.elog.env`中写入环境变量
+参考[示例知识库](https://www.yuque.com/1874w/yuque-vitepress-template)，选择或新建语雀文档知识库，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置语雀并获取 `token``login``repo`。并在本地`.elog.env`中写入
 ```latex
 YUQUE_TOKEN=获取的Token
 YUQUE_LOGIN=获取的login
@@ -45,32 +45,39 @@ YUQUE_REPO=获取的repo
 npm run elog:sync-local
 ```
 
+### 配置 VitePress
+根据 [VitePress](https://vitepress.dev/) 文档，配置你的文档站点直到你满意为止。
+
+1. 修改 VitePress 的配置文件`docs/.vitepress/config.mts`中的导航栏、路由信息等
+2. 修改首页信息`docs/index.md`中的文字和路由
+3. 更多自定义配置请看 VitePress 文档
+:::warning
+本文档默认是按照文档目录渲染站点 URL，可能会存在中文路由，如果想要短路由模式，即站点路由全英文，可前往[进阶配置](/docs/进阶配置/VitePress短路由模式)中阅读
+:::
+
 ### 启动 VitePress
 在项目根目录运行 VitePress 启动命令，打开本地链接
 ```shell
 npm run docs:dev
 ```
 
-### 配置  VitePress  站点
-根据 [VitePress](https://vitepress.dev/) 文档，配置你的文档站点直到你满意为止。
-::: tip
-本文档默认是按照文档目录渲染站点 URL，可能会存在中文路由，如果想要短路由模式，即站点路由全英文，可前往进阶配置阅读
-:::
-
 ### 提交代码到 github
 本地访问没问题直接提交所有文件到 Github 仓库即可
 
 ### 部署到 Vercel
-注册 Vercel 账号并绑定 Github，在 Vercel 导入 该项目，Vercel 会自动识别出该 Hexo 项目，不需要改动，直接选择 Deploy 部署。部署完成会有一个 Vercel 临时域名，你也可以绑定自己的域名。
+注册 Vercel 账号并绑定 Github，在 Vercel 导入 该项目，Vercel 会自动识别出该 VitePress 项目，不需要改动，直接选择 Deploy 部署。部署完成会有一个 Vercel 临时域名，你也可以绑定自己的域名。
+![image.png](../images/2df2e6f85b7ba8d86f83a103988f08a4.png)
 
 ## 自动化同步&部署
 
-### 配置 Github Actions 权限
+### 检查 Github Actions 权限
 在 Github 仓库的设置中找到 `Actions-General`，打开流水线写入权限`Workflow permissions`
+![image.png](../images/ea903f5672495500ba7966b348453446.png)
 
 ### 配置环境变量
 在本地运行时，用的是`.elog.env`文件中定义的语雀账号信息，而在 Github Actions 时，需要提前配置环境变量。  
 在 Github 仓库的设置中找到 `Secrets and variables`，新增仓库的环境变量和`.elog.env`保持一致即可
+![image.png](../images/e5e6b85512cb1a786c95161544ae7f3f.png)
 
 ### 自动化部署
 当在语雀中改动文档后，手动/自动触发 Github Actions流水线，会重新从语雀增量拉取文档，自动提交代码到 Github 仓库。  
@@ -79,13 +86,13 @@ Vercel 会实时监测仓库代码，当有新的提交时都会重新部署博�
 在项目.`github/workflows/sync.yaml`中已经配置了外部 API 触发 Github Actions 事件，所以只需要调用 API 触发流水线即可。
 
 #### 手动触发
-为了方便，这里提供一个部署在 Vercel 的免费公用的[**ServerlessAPI**](https://github.com/elog-x/serverless-api)，只需要配置好 URL 参数并浏览器访问即可触发流水线
+为了方便，这里提供一个部署在 Vercel 的免费公用的[**ServerlessAPI**](https://github.com/elog-x/serverless-api)，按照文档配置好 URL 参数并浏览器访问即可触发流水线
 ```shell
 https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=deploy&token=xxx
 ```
 
 #### 自动触发-语雀 webhooks
-在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写上面的 Vercel Serverless API 即可。当文档更新时，语雀会调用这个API进行推送，进而触发 Github Actions
+在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写上面的 Vercel Serverless API。当文档更新时，语雀会调用这个API进行推送，进而触发 Github Actions
 :::warning
 注意：语雀是国内文档平台，调用国外Vercel 的服务可能会失败，可自行部署 API
 :::
@@ -93,7 +100,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=d
 注意：知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 :::
 
-## 示例
+## 参考示例
 示例 Github 仓库：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/yuque-vitepress)  
 示例语雀知识库：[https://www.yuque.com/1874w/yuque-vitepress-template](https://www.yuque.com/1874w/yuque-vitepress-template)  
 示例文档站点：[https://yuque-vitepress.vercel.app](https://yuque-vitepress.vercel.app/)  
