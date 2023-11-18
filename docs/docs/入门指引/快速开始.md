@@ -20,27 +20,27 @@ VitePress 要求 Node 18及以上版本
 ## 博客搭建指南
 
 ### Fork模板仓库
-[点击 Fork](https://github.com/elog-x/yuque-vitepress) 该模板仓库到个人 Github 账号仓库下并 clone 到本地
+[点击 Fork](https://github.com/elog-x/yuque-vitepress) 该模板仓库到个人 Github 账号仓库下并 clone 到本地。
 
 ### 安装依赖
-在项目根目录下运行命令安装依赖
+在项目根目录下运行命令安装依赖：
 ```shell
 npm install
 ```
 
 ### 新建本地调试文件
-在项目根目录中复制`.elog.example.env`文件并改名为`.elog.env`，此文件将用于本地同步文档时使用
+在项目根目录中复制`.elog.example.env`文件并改名为`.elog.env`，此文件将用于本地同步文档时使用。
 
 ### 配置语雀
-参考[示例知识库](https://www.yuque.com/1874w/yuque-vitepress-template)，选择或新建语雀文档知识库，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置语雀并获取 `token``login``repo`。并在本地`.elog.env`中写入
-```latex
+参考[示例知识库](https://www.yuque.com/1874w/yuque-vitepress-template)，选择或新建语雀文档知识库，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置语雀并获取`token login repo`。并在本地`.elog.env`中写入。
+```
 YUQUE_TOKEN=获取的Token
 YUQUE_LOGIN=获取的login
 YUQUE_REPO=获取的repo
 ```
 
 ### 本地调试
-在项目根目录运行同步命令
+在项目根目录运行同步命令：
 ```shell
 npm run elog:sync-local
 ```
@@ -48,15 +48,16 @@ npm run elog:sync-local
 ### 配置 VitePress
 根据 [VitePress](https://vitepress.dev/) 文档，配置你的文档站点直到你满意为止。
 
-1. 修改 VitePress 的配置文件`docs/.vitepress/config.mts`中的导航栏、路由信息等
-2. 修改首页信息`docs/index.md`中的文字和路由
-3. 更多自定义配置请看 VitePress 文档
+1. 修改 VitePress 的配置文件`docs/.vitepress/config.mts`中的导航栏、路由信息等。
+2. 修改首页信息`docs/index.md`中的文字和路由。
+3. 修改网站图标 ico。
+4. 更多自定义配置请看 VitePress 文档。
 :::warning
 本文档默认是按照文档目录渲染站点 URL，可能会存在中文路由，如果想要短路由模式，即站点路由全英文，可前往[进阶配置](/docs/进阶配置/VitePress短路由模式)中阅读
 :::
 
 ### 启动 VitePress
-在项目根目录运行 VitePress 启动命令，打开本地链接
+在项目根目录运行 VitePress 启动命令，打开本地链接。
 ```shell
 npm run docs:dev
 ```
