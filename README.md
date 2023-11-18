@@ -39,7 +39,7 @@ npm install
 ，选择或新建语雀文档知识库，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)
 配置语雀并获取 `token``login``repo`。并在本地`.elog.env`中写入
 
-```latex
+```text
 YUQUE_TOKEN=获取的Token
 YUQUE_LOGIN=获取的login
 YUQUE_REPO=获取的repo
