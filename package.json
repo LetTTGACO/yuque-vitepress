@@ -25,9 +25,6 @@
     "url": "https://github.com/LetTTGACO/yuque-vitepress/issues"
   },
   "homepage": "https://github.com/LetTTGACO/yuque-vitepress#readme",
-  "devDependencies": {
-    "vitepress": "^1.0.0-rc.27"
-  },
   "dependencies": {
     "@elog/cli": "^0.12.0-beta.3",
     "vitepress": "^1.0.0-rc.27"
