@@ -1,16 +1,3 @@
----
-title: Elog配置详解
-urlname: bg32rx8afe5cfu4f
-date: '2023-11-18 15:42:00'
-updated: '2023-11-18 21:53:55'
-author: '1874'
-categories: Elog-Notion
-tags:
-  - notion
-  - elog
-description: 使用Notion + Hexo部署博客时，在 Notion 上写作的注意事项，以及如何配置Elog使其更好的结合Hexo
-permalink: notion-notice/
----
 
 # Elog配置详解
 

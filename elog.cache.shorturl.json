@@ -24,12 +24,12 @@
     {
       "id": 147363135,
       "doc_id": "neggaa196u5yqmqm",
-      "updated": 1700315647000,
+      "updated": 1700321667000,
       "properties": {
         "title": "语雀示例文章",
         "urlname": "neggaa196u5yqmqm",
         "date": "2023-11-18 15:44:04",
-        "updated": "2023-11-18 21:54:07",
+        "updated": "2023-11-18 23:34:27",
         "author": "1874"
       },
       "catalog": [
@@ -45,20 +45,13 @@
     {
       "id": 147362998,
       "doc_id": "bg32rx8afe5cfu4f",
-      "updated": 1700315635000,
+      "updated": 1700321653000,
       "properties": {
         "title": "Elog配置详解",
         "urlname": "bg32rx8afe5cfu4f",
         "date": "2023-11-18 15:42:00",
-        "updated": "2023-11-18 21:53:55",
-        "author": "1874",
-        "categories": "Elog-Notion",
-        "tags": [
-          "notion",
-          "elog"
-        ],
-        "description": "使用Notion + Hexo部署博客时，在 Notion 上写作的注意事项，以及如何配置Elog使其更好的结合Hexo",
-        "permalink": "notion-notice/"
+        "updated": "2023-11-18 23:34:13",
+        "author": "1874"
       },
       "catalog": [
         {
@@ -73,22 +66,13 @@
     {
       "id": 147362979,
       "doc_id": "ssuhngw0yb3dgkkg",
-      "updated": 1700312243000,
+      "updated": 1700321630000,
       "properties": {
         "title": "快速开始",
         "urlname": "ssuhngw0yb3dgkkg",
         "date": "2023-11-18 15:41:50",
-        "updated": "2023-11-18 20:57:23",
-        "author": "1874",
-        "categories": "技术文档折腾手册",
-        "tags": [
-          "elog",
-          "notion",
-          "hexo",
-          "blog"
-        ],
-        "description": "",
-        "permalink": "notion-hexo/"
+        "updated": "2023-11-18 23:33:50",
+        "author": "1874"
       },
       "catalog": [
         {
