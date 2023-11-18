@@ -2,7 +2,7 @@
 # 快速开始
 
 ## 前言
-::: warning
+:::warning
 注意：2023/11/18更新：由于语雀官方更新了账号密码登录规则，加上了人机校验，账号密码模式已无法通过 Elog 登录！目前只能使用 Token 方式同步文档（需要语雀超级会员）  
 如果你不是语雀超级会员，可以使用 Notion 进行部署文档站点，[参考示例](https://github.com/LetTTGACO/elog-docs)
 :::
@@ -15,7 +15,7 @@ VitePress 要求 Node 18及以上版本
 - 写作平台：语雀
 - 文档平台：[VitePress](https://vitepress.dev/)
 - 文档同步：[Elog](https://github.com/LetTTGACO/elog)
-- 部署平台：Vercel
+- 部署平台：[Vercel](https://vercel.com)
 
 ## 博客搭建指南
 
@@ -53,7 +53,7 @@ npm run docs:dev
 
 ### 配置  VitePress  站点
 根据 [VitePress](https://vitepress.dev/) 文档，配置你的文档站点直到你满意为止。
-::: info
+::: tip
 本文档默认是按照文档目录渲染站点 URL，可能会存在中文路由，如果想要短路由模式，即站点路由全英文，可前往进阶配置阅读
 :::
 
@@ -86,17 +86,14 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=d
 
 #### 自动触发-语雀 webhooks
 在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写上面的 Vercel Serverless API 即可。当文档更新时，语雀会调用这个API进行推送，进而触发 Github Actions
-::: warning
-注意：语雀是国内文档平台，调用 国外Vercel 的服务可能会失败，可自行部署 API
+:::warning
+注意：语雀是国内文档平台，调用国外Vercel 的服务可能会失败，可自行部署 API
 :::
-::: warning
+:::warning
 注意：知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 :::
 
-## 自定义 Elog 配置
-如果想自定义 Elog 配置，可访问 [Elog 文档](https://elog.1874.cool/)
-
 ## 示例
-示例 Github 仓库：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/yuque-vitepress)
-示例语雀知识库：[https://www.yuque.com/1874w/yuque-vitepress-template](https://www.yuque.com/1874w/yuque-vitepress-template)
-示例文档站点：[https://yuque-vitepress.vercel.app/](https://yuque-vitepress.vercel.app/)
+示例 Github 仓库：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/yuque-vitepress)  
+示例语雀知识库：[https://www.yuque.com/1874w/yuque-vitepress-template](https://www.yuque.com/1874w/yuque-vitepress-template)  
+示例文档站点：[https://yuque-vitepress.vercel.app](https://yuque-vitepress.vercel.app/)  
