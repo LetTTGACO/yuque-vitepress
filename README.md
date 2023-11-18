@@ -94,7 +94,7 @@ npm run docs:dev
 
 在本地运行时，用的是`.elog.env`文件中定义的语雀账号信息，而在 Github Actions 时，需要提前配置环境变量。  
 在 Github 仓库的设置中找到 `Secrets and variables`，新增仓库的环境变量和`.elog.env`保持一致即可
-![image](https://image.1874.cool/1874/202311190123385.png)
+![image](https://image.1874.cool/1874/202311190147017.jpg)
 
 ### 自动化部署
 
