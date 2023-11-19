@@ -34,7 +34,7 @@ module.exports = {
 
 ```
 
-### 语雀配置
+## 语雀配置
 ```javascript
 yuque: {
   token: process.env.YUQUE_TOKEN,
@@ -51,7 +51,7 @@ yuque: {
 - `onlyPublic`表示是否只下载互联网公开文档
 - `onlyPublished`表示是否只下载已发布文档
 
-### 本地配置
+## 本地配置
 ```javascript
 local: {
   outputDir: './docs/docs',
@@ -66,7 +66,7 @@ local: {
 - `format`表示文档将以 markdown 的形式保存
 - `catalog`表示文档将按照语雀知识库的现有目录存放
 
-### 图床配置
+## 图床配置
 ```javascript
 local: {
   outputDir: './docs/images',
