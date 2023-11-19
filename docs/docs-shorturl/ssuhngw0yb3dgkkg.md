@@ -78,7 +78,7 @@ npm run docs:dev
 ### 配置环境变量
 在本地运行时，用的是`.elog.env`文件中定义的语雀账号信息，而在 Github Actions 时，需要提前配置环境变量。  
 在 Github 仓库的设置中找到 `Secrets and variables`，新增仓库的环境变量和`.elog.env`保持一致即可
-![image.png](../images/e5e6b85512cb1a786c95161544ae7f3f.png)
+![image.png](../images/e9c14f115e7d8239d0126515b71c0b42.png)
 
 ### 自动化部署
 当在语雀中改动文档后，手动/自动触发 Github Actions流水线，会重新从语雀增量拉取文档，自动提交代码到 Github 仓库。  
@@ -102,6 +102,6 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=d
 :::
 
 ## 参考示例
-示例 Github 仓库：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/yuque-vitepress)  
+示例 Github 仓库：[https://github.com/LetTTGACO/yuque-vitepress](https://github.com/LetTTGACO/yuque-vitepress)  
 示例语雀知识库：[https://www.yuque.com/1874w/yuque-vitepress-template](https://www.yuque.com/1874w/yuque-vitepress-template)  
 示例文档站点：[https://yuque-vitepress.vercel.app](https://yuque-vitepress.vercel.app/)  
