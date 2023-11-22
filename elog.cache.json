@@ -1,27 +1,6 @@
 {
   "docs": [
     {
-      "id": 147390855,
-      "doc_id": "xpoghpkl22q6hkie",
-      "updated": 1700412848000,
-      "properties": {
-        "title": "写作注意事项",
-        "urlname": "xpoghpkl22q6hkie",
-        "date": "2023-11-18 23:53:13",
-        "updated": "2023-11-20 00:54:08",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "配置详情",
-          "doc_id": "xpoghpkl22q6hkie"
-        }
-      ],
-      "realName": "写作注意事项",
-      "relativePath": "/配置详情/写作注意事项.md",
-      "docPath": "docs/docs/配置详情"
-    },
-    {
       "id": 147392043,
       "doc_id": "yeanygk42ggzdy3y",
       "updated": 1700326762000,
@@ -64,24 +43,24 @@
       "docPath": "docs/docs/关于"
     },
     {
-      "id": 147362998,
-      "doc_id": "bg32rx8afe5cfu4f",
-      "updated": 1700366259000,
+      "id": 147390855,
+      "doc_id": "xpoghpkl22q6hkie",
+      "updated": 1700412848000,
       "properties": {
-        "title": "Elog配置详解",
-        "urlname": "bg32rx8afe5cfu4f",
-        "date": "2023-11-18 15:42:00",
-        "updated": "2023-11-19 11:57:39",
+        "title": "写作注意事项",
+        "urlname": "xpoghpkl22q6hkie",
+        "date": "2023-11-18 23:53:13",
+        "updated": "2023-11-20 00:54:08",
         "author": "1874"
       },
       "catalog": [
         {
           "title": "配置详情",
-          "doc_id": "bg32rx8afe5cfu4f"
+          "doc_id": "xpoghpkl22q6hkie"
         }
       ],
-      "realName": "Elog配置详解",
-      "relativePath": "/配置详情/Elog配置详解.md",
+      "realName": "写作注意事项",
+      "relativePath": "/配置详情/写作注意事项.md",
       "docPath": "docs/docs/配置详情"
     },
     {
@@ -104,6 +83,27 @@
       "realName": "自定义Elog配置",
       "relativePath": "/进阶配置/自定义Elog配置.md",
       "docPath": "docs/docs/进阶配置"
+    },
+    {
+      "id": 147362998,
+      "doc_id": "bg32rx8afe5cfu4f",
+      "updated": 1700366259000,
+      "properties": {
+        "title": "Elog配置详解",
+        "urlname": "bg32rx8afe5cfu4f",
+        "date": "2023-11-18 15:42:00",
+        "updated": "2023-11-19 11:57:39",
+        "author": "1874"
+      },
+      "catalog": [
+        {
+          "title": "配置详情",
+          "doc_id": "bg32rx8afe5cfu4f"
+        }
+      ],
+      "realName": "Elog配置详解",
+      "relativePath": "/配置详情/Elog配置详解.md",
+      "docPath": "docs/docs/配置详情"
     },
     {
       "id": 147362979,
