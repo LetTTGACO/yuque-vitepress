@@ -4,7 +4,7 @@
 ```javascript
 module.exports = {
   write: {
-    platform: 'yuque',
+    platform: 'yuque-pwd',
     yuque: {
       token: process.env.YUQUE_TOKEN,
       login: process.env.YUQUE_LOGIN,
