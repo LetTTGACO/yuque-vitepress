@@ -17,7 +17,7 @@ VitePress 要求 Node 18及以上版本
 - 文档同步：[Elog](https://github.com/LetTTGACO/elog)
 - 部署平台：[Vercel](https://vercel.com)
 
-## 博客搭建指南
+## 文档站点搭建指南
 
 ### Fork模板仓库
 [点击 Fork](https://github.com/elog-x/yuque-vitepress/fork) 该模板仓库到个人 Github 账号仓库下并 clone 到本地。
@@ -108,7 +108,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=d
 
 #### 自动触发-语雀 webhooks
 :::warning
-需要语雀超级会员
+需要语雀专业会员
 :::
 在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写上面的 Vercel Serverless API。当文档更新时，语雀会调用这个API进行推送，进而触发 Github Actions
 :::warning
