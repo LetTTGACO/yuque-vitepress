@@ -66,13 +66,14 @@
     {
       "id": 147363037,
       "doc_id": "gn12qnqe683ns0co",
-      "updated": 1700326804000,
+      "updated": 1702880022000,
       "properties": {
         "title": "自定义Elog配置",
         "urlname": "gn12qnqe683ns0co",
         "date": "2023-11-18 15:42:35",
-        "updated": "2023-11-19 01:00:04",
-        "author": "1874"
+        "updated": "2023-12-18 14:13:42",
+        "author": "1874",
+        "description": "自定义Elog配置更多自定义Elog 配置详情，请阅读 Elog 文档"
       },
       "catalog": [
         {
